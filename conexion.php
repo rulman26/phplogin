@@ -20,7 +20,8 @@ class baseDatos
        {      
 	        try 
 	        {
-	  			self::$cont = new PDO("mysql:dbname=demo;host=localhost;port=3306;charset=utf8mb4","demo","94312426");
+				  self::$cont = new PDO("mysql:dbname=demo;host=localhost;port=3306;charset=utf8mb4","demo","94312426");
+				  //self::$cont= mysqli_connect("localhost","demo","94312426","demo");
 	        }
 	        catch(PDOException $e) 
 	        {
